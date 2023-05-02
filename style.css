@@ -127,10 +127,14 @@ body {
 
 footer {
   text-align: center;
-  padding: 5%;
-  background-color:aqua;"
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color:aqua;
 }
 
+.footer-bonus {
+  padding-bottom: 1%;
+}
 
 
 .body1 {
