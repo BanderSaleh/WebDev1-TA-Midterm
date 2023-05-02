@@ -8,11 +8,11 @@
 
 
 
+
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: #333;
     overflow: hidden;
-    
   }
   
 
@@ -41,12 +41,121 @@
 
 
 
+
+body {
+  background-color: #f9faf5;
+}
+
   
-.Title {
-    visibility: hidden;
+
+
+.container {  
+  display: grid;
+  /* text-align: justify; */
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "image-b4_after Triple-Circle-Image";
+  padding: 6px;
+  outline: 5px solid rgb(122, 118, 118);
+}
+
+.image-b4_after {
+  grid-area: image-b4_after;
+  /* height: 100%; */
+  /* padding: 60px; */
+  outline: 5px dashed rgb(214, 143, 143);
+  
+}
+
+.Triple-Circle-Image {  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "green-and-blue-icon"
+    "globe-image";
+  grid-area: Triple-Circle-Image;
+  outline: 5px dashed rgb(187, 219, 255);
+}
+
+.green-and-blue-icon {  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "green-icon blue-icon";
+  grid-area: green-and-blue-icon;
+}
+
+.green-icon { grid-area: green-icon; outline: 5px dashed rgb(151, 228, 151); }
+
+.blue-icon { grid-area: blue-icon; padding-top: 10px; outline: 5px dashed rgb(151, 228, 151); }
+
+.globe-image { grid-area: globe-image; padding-top: 35px; }
+
+
+
+
+
+
+
+
+
+
+.title {
+    /* visibility: hidden; */
+    text-align: center;
     font-family: Helvetica, Arial, sans-serif;
-    color: green;
+    
+}
+
+#title-photo{
+  align-items: center;
+
+}
+
+#title-text {
+  color: rgb(29, 177, 29);
 }
 
 
 
+footer {
+  text-align: center;
+  padding-bottom: 35px;
+}
+
+
+
+.body2 {
+  padding: 20px 0px 20px 80px;
+}
+
+
+
+
+/* about page */
+.about-photo {
+  text-align: center;
+  padding: 20px 20px 20px 20px;
+}
+.about-body {
+    padding-left: 25px;
+}
+
+#resource-body1 {
+    padding: 5px 0px 5px 25px;
+}
+
+#resource-body2 {
+    padding: 5px 0px 5px 25px;
+}
+
+#resource-body3 {
+  padding: 5px 0px 5px 25px;
+}
